@@ -19,7 +19,6 @@ Este projeto tem como objetivo criar uma **infraestrutura automatizada na AWS** 
 - Terraform instalado.  
 - Conta na AWS. 
 
----
 
 ## 2. Plano de Integração Contínua (CI)
 
@@ -34,24 +33,25 @@ O pipeline de integração contínua será organizado da seguinte forma:
 - Arquivo: `.github/workflows/ci.yml`  
 - Repositório: [https://github.com/francielleabreu/devops-projeto.git](https://github.com/francielleabreu/devops-projeto.git)
 
----
 
 ## 3. Especificações da Infraestrutura (AWS)
-Provedor de Nuvem: AWS (Amazon Web Services)
+
+**Provedor de Nuvem:**
+
+- AWS (Amazon Web Services)
 
 **Recursos necessários:**
 
-- EC2: Máquina virtual Linux (Ubuntu 22.04) com 1 vCPU, 1 GB de RAM (t2.micro), security group com SSH e HTTP.
-- S3: Bucket para armazenamento de artefatos e arquivos de build.
+- EC2: Máquina virtual Linux (Ubuntu 22.04) com 1 vCPU, 1 GB de RAM (t2.micro), security group com SSH e HTTP;
+- S3: Bucket para armazenamento de artefatos e arquivos de build;
 - VPC: Sub-rede pública, internet gateway para acesso externo.
 
 **Infraestrutura como Código (IaC):**
 
-- Ferramenta: Terraform
-- Todos os recursos serão provisionados via Terraform e versionados no repositório GitHub.
+- Ferramenta: Terraform;
+- Todos os recursos serão provisionados via Terraform e versionados no repositório GitHub;
 - Código dos scripts de IaC: pasta infrastructure/ no repositório.
 
----
 
 ## 4. Links do Projeto
 
