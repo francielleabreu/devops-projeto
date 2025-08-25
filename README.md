@@ -1,7 +1,5 @@
 # Projeto DevOps PUCRS
 
-# Configuração e Automação Inicial
-
 ## 1. Planejamento do Projeto
 
 **Descrição do projeto:**  
