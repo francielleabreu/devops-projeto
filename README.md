@@ -1,1 +1,1 @@
-# devops-projeto
+# Projeto DevOps PUCRS
