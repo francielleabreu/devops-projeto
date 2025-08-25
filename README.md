@@ -44,11 +44,11 @@ O pipeline de integração contínua será organizado da seguinte forma:
 - S3: Bucket para armazenamento de artefatos e arquivos de build;
 - VPC: Sub-rede pública, internet gateway para acesso externo.
 
-**Infraestrutura como Código (IaC):**
+**Infraestrutura como Código (CI):**
 
 - Ferramenta: Terraform;
 - Todos os recursos serão provisionados via Terraform e versionados no repositório GitHub;
-- Código dos scripts de IaC: pasta infrastructure/ no repositório.
+- Código dos scripts de CI: pasta infrastructure/ no repositório.
 
 
 ## 4. Links do Projeto
@@ -57,4 +57,4 @@ O pipeline de integração contínua será organizado da seguinte forma:
 
 **Pipeline CI:** .github/workflows/ci.yml dentro do mesmo repositório.
 
-**Scripts IaC (Terraform):** pasta infrastructure/ dentro do mesmo repositório.
+**Scripts CI (Terraform):** pasta infrastructure/ dentro do mesmo repositório.
