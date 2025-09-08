@@ -24,7 +24,7 @@ jobs:
       run: npm test
 
     - name: Build Docker image
-      run: docker build -t devops-projeto:latest .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-projeto:latest .
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
